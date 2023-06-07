@@ -239,3 +239,44 @@ $cliente['codigo'] = 1209192012;
 echo "<pre>";
 var_dump($cliente);
 echo "</pre>";
+?>
+<!-- -------------------------------------------------------------------- -->
+<?php
+// in_array - buscar elementos en un arreglo
+$carrito = ['Tablet', 'Television', 'Computadora'];
+
+var_dump(in_array('Tablet', $carrito));
+echo "<br>";
+var_dump(in_array('Audifonos', $carrito));
+echo "<br>";
+
+// ordenar elementos de un arreglo
+$numeros = array(1,3,4,5,1,2);
+sort($numeros); //de menor a mayor
+rsort($numeros); //de mayor a menor
+
+echo "<pre>";
+var_dump($numeros);
+echo "</pre>";
+
+//ordenar arrglos asociativo
+$cliente = array(
+    'saldo' => 200,
+    'tipo' => 'premiun',
+    'nombre' => 'Juan David'
+);
+
+echo "<pre>";
+var_dump($cliente);
+echo "</pre>";
+
+asort($cliente); //ordenar por valores (orden alfabetico)
+arsort($cliente); //orden por valores (Z primero)
+ksort($cliente); // ordenar por llaves (orden alfabetico)
+krsort($cliente); // ordenar por llaves (orden alfabetico, DE LA Z a la A)
+
+echo "<pre>";
+var_dump($cliente);
+echo "</pre>";
+
+?>
